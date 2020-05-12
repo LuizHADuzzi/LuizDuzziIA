@@ -314,9 +314,10 @@ print('Predicted:', decode_predictions2(preds, top=3)[0])
 ## InceptionResNetV2##################################
 model3 = InceptionResNetV2(weights='imagenet')
 
-print("-----------NasNetLARGE--------------")
+
+print("-----------InceptionResNetV2--------------")
 img_path = 'elephant1.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -324,7 +325,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'elephant2.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -332,7 +333,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'elephant3.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -340,7 +341,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'microphone1.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -348,7 +349,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'microphone2.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -356,7 +357,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'microphone3.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -364,7 +365,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'chair1.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -372,7 +373,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'chair2.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -380,7 +381,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'chair3.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -388,7 +389,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'pen1.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -396,7 +397,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'pen2.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -404,7 +405,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'pen3.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -412,7 +413,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'spider1.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -420,7 +421,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'spider2.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -428,7 +429,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'spider3.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -436,7 +437,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'snake1.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -444,7 +445,7 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'snake2.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
@@ -452,9 +453,10 @@ preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
 
 img_path = 'snake3.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
+img = image.load_img(img_path, target_size=(299, 299))
 x = image.img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input3(x)
 preds = model3.predict(x)
 print('Predicted:', decode_predictions3(preds, top=3)[0])
+
